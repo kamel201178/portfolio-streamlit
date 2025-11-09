@@ -20,9 +20,10 @@ if PDF_PATH.exists():
         use_container_width=True,
     )
 
-    # Affichage intégré du PDF
-    base64_pdf = base64.b64encode(pdf_bytes).decode("utf-8")
-    pdf_viewer = f'<iframe src="data:application/pdf;base64,{base64_pdf}" width="100%" height="900" type="application/pdf"></iframe>'
-    st.markdown(pdf_viewer, unsafe_allow_html=True)
-else:
-    st.error("⚠️ Le fichier PDF n’a pas été trouvé. Vérifie qu’il est bien dans le dossier `assets/`.")
+        # Affichage via Google Docs Viewer (compatible Cloud)
+    from urllib.parse import quote
+
+    RAW_URL = "https://raw.githubusercontent.com/kamel201178/portfolio-streamlit/main/assets/CV_Kamel_Touchal.pdf"
+    viewer_url = f"https://docs.google.com/gview?embedded=1&url={quote(RAW_URL, safe=':/')}"
+    st.components.v1.iframe(viewer_url, height=900)
+
