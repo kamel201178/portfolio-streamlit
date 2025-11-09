@@ -1,6 +1,6 @@
 [theme]
-primaryColor = "#1E90FF"          # Bleu moyen (boutons, liens, sliders)
-backgroundColor = "#d6d9f5ff"     # Bleu clair légèrement plus soutenu
-secondaryBackgroundColor = "#FFFFFF"  # Cartes et sections en blanc
-textColor = "#0E1117"             # Texte gris foncé pour la lisibilité
+primaryColor = "#1E90FF"          # Bleu moyen pour les boutons et liens
+backgroundColor = "#0E1A40"       # Bleu foncé profond, élégant
+secondaryBackgroundColor = "#132A5E"  # Bleu un peu plus clair pour les encadrés
+textColor = "#F5F7FA"             # Texte blanc cassé, très lisible
 font = "sans serif"
