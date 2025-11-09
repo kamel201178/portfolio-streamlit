@@ -2,7 +2,7 @@ import streamlit as st
 
 st.set_page_config(page_title="Mon Portfolio", page_icon="🎯", layout="centered")
 
-st.sidebar.success("Navigation : choisissez une page 👇")
+# st.sidebar.success("Navigation : choisissez une page 👇")
 
 st.title("Bonjour, je suis Kamel Touchal")
 st.subheader("Data / Projet")
