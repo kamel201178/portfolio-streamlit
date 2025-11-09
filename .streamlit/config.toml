@@ -1,6 +1,6 @@
 [theme]
-primaryColor = "#4F46E5"
-backgroundColor = "#0B1021"
-secondaryBackgroundColor = "#111827"
-textColor = "#F3F4F6"
+primaryColor = "#1E90FF"         # Bleu vif pour les boutons et liens
+backgroundColor = "#EAF2FB"      # Bleu clair doux en fond
+secondaryBackgroundColor = "#FFFFFF"  # Cartes blanches
+textColor = "#0E1117"            # Texte gris foncé
 font = "sans serif"
