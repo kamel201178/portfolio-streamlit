@@ -1,6 +1,8 @@
 import streamlit as st
 import base64
 from pathlib import Path
+from urllib.parse import quote
+
 
 st.title("📄 Mon CV")
 
@@ -20,10 +22,12 @@ if PDF_PATH.exists():
         use_container_width=True,
     )
 
-        # Affichage via Google Docs Viewer (compatible Cloud)
-    from urllib.parse import quote
 
-    RAW_URL = "https://raw.githubusercontent.com/kamel201178/portfolio-streamlit/main/assets/CV_Kamel_Touchal.pdf"
-    viewer_url = f"https://docs.google.com/gview?embedded=1&url={quote(RAW_URL, safe=':/')}"
-    st.components.v1.iframe(viewer_url, height=900)
+
+# URL "raw" du PDF sur GitHub (publique)
+RAW_URL = "https://raw.githubusercontent.com/kamel201178/portfolio-streamlit/main/assets/CV_Kamel_Touchal.pdf"
+
+# Affichage via PDF.js (Mozilla) — très compatible en iframe
+viewer_url = f"https://mozilla.github.io/pdf.js/web/viewer.html?file={quote(RAW_URL, safe='')}"
+st.components.v1.iframe(viewer_url, height=900)
 
