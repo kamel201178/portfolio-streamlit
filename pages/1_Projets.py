@@ -21,10 +21,10 @@ Le travail a inclus la **préparation des données (Power Query)**, la **modéli
 
 # Afficher les 4 captures du dashboard
 cols = st.columns(2)
-cols[0].image(str(ASSETS_PATH / "PB1_BC.png"), caption="Page 1 – Synthèse KPI", use_container_width=True)
-cols[1].image(str(ASSETS_PATH / "PB2_BC.png"), caption="Page 2 – Détail ventes par région", use_container_width=True)
-cols[0].image(str(ASSETS_PATH / "PB3_BC.png"), caption="Page 3 – Analyse produits", use_container_width=True)
-cols[1].image(str(ASSETS_PATH / "PB4_BC.png"), caption="Page 4 – Performance commerciale", use_container_width=True)
+cols[0].image(str(ASSETS_PATH / "PB1_BC.png"), caption="Page 1 – Synthèse KPI", use_column_width=True)
+cols[1].image(str(ASSETS_PATH / "PB2_BC.png"), caption="Page 2 – Détail ventes par région", use_column_width=True)
+cols[0].image(str(ASSETS_PATH / "PB3_BC.png"), caption="Page 3 – Analyse produits", use_column_width=True)
+cols[1].image(str(ASSETS_PATH / "PB4_BC.png"), caption="Page 4 – Performance commerciale", use_column_width=True)
 
 # Lien de téléchargement du PDF du business case
 pdf_path = ASSETS_PATH / "Business case Bicycle HORIZON.pdf"
