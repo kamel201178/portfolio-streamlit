@@ -13,7 +13,7 @@ en **gestion de projet**, **analyse opérationnelle** et **communication profess
 """)
 
 # --- chemin du PDF ---
-PDF_PATH = Path(__file__).parent.parent / "assets" / "Livret_de_competences.pdf"
+PDF_PATH = Path(__file__).parent.parent / "assets" / "livret_de_competences.pdf"
 
 if PDF_PATH.exists():
     with open(PDF_PATH, "rb") as f:
